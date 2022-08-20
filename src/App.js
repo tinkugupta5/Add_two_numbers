@@ -25,15 +25,11 @@ function App() {
       else
       {
         let Add = parseInt(num1)+parseInt(num2);
-        console.log(  typeof(Add));
+        console.log(typeof(Add));
         setAdd(parseInt(Add))
       }
 
     }
-
-
-
-
 
   return (
   <div className='app'>
@@ -42,19 +38,16 @@ function App() {
       <form onSubmit={calcSum}>
         <div>
         <label>Number 1</label>
-            <input type="text" placeholder='Enter Number1 value' value={num1} onChange={(e) => setNum1(e.target.value)} />
+        <input type="text" placeholder='Enter Number1 value' value={num1} onChange={(e) => setNum1(e.target.value)} />
         </div>
         <div>
         <label>Number 2</label>
             <input type="text" placeholder='Enter Number2 value' value={num2} onChange={(e) => setNum2(e.target.value)} />
         </div>
-
         <div>
             <button className='btn' type='submit'>Submit</button>
         </div>
-
       </form>
-
       <div className='center'>
           <h3>Your BMI is: {Add}</h3>
         </div>
