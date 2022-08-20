@@ -3,16 +3,12 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-
   //state
-
   const [num1, setNum1] = useState()
   const [num2, setNum2] = useState()
   const [Add, setAdd] = useState('')
 
-
   //logic
-
     const calcSum = (event) => {
       event.preventDefault() // first 
       console.log(event);
@@ -30,7 +26,6 @@ function App() {
       }
 
     }
-
   return (
   <div className='app'>
     <div className='container'>
