@@ -29,7 +29,7 @@ function App() {
   return (
   <div className='app'>
     <div className='container'>
-      <h2 className='center'>BMI Calculator</h2>
+      <h2 className='center'>Sum Calculator</h2>
       <form onSubmit={calcSum}>
         <div>
         <label>Number 1</label>
@@ -44,7 +44,7 @@ function App() {
         </div>
       </form>
       <div className='center'>
-          <h3>Your BMI is: {Add}</h3>
+          <h3>Your Sum is: {Add}</h3>
         </div>
     </div>
   </div>
