@@ -24,8 +24,8 @@ function App() {
         console.log(typeof(Add));
         setAdd(parseInt(Add))
       }
-
     }
+
   return (
   <div className='app'>
     <div className='container'>
@@ -45,7 +45,7 @@ function App() {
       </form>
       <div className='center'>
           <h3>Your Sum is: {Add}</h3>
-        </div>
+      </div>
     </div>
   </div>
   );
