@@ -3,21 +3,18 @@ import { useState } from 'react';
 import './App.css';
 
 function App() {
-  //state
+  
   const [num1, setNum1] = useState()
   const [num2, setNum2] = useState()
   const [Add, setAdd] = useState('')
 
-  //logic
     const calcSum = (event) => {
-      event.preventDefault() // first 
+      event.preventDefault() 
       console.log(event);
-
       if(num1===0 || num2===0)
       {
         alert("please enter a valid weight and height")
       }
-
       else
       {
         let Add = parseInt(num1)+parseInt(num2);
